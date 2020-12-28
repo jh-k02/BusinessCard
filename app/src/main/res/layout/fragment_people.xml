@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/people_num"
+                    />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+        >
+            <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                >
+
+                <EditText
+                        android:id="@+id/people_search"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:hint="검색"
+                        android:singleLine="true"
+                />
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="right">
+
+                        <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="검색"
+                                android:gravity="center"
+                                android:id="@+id/people_search_button"
+                                android:layout_marginRight="10dp"
+                                android:background="@color/buttoncolor"
+                        />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/fragmentpeople_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+        >
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        tools:context=".ModifyActivity">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+    >
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                <ImageView
+                        android:id="@+id/modify_after_image"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/add_photo_icon"
+                />
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="변경 후 이미지"
+                />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                    android:id="@+id/modify_recyclerview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+            >
+            </android.support.v7.widget.RecyclerView>
+
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="수정"
+                    android:id="@+id/modify_button"
+                    android:background="@color/buttoncolor"
+                    android:elevation="4dp"
+                    android:layout_margin="4dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

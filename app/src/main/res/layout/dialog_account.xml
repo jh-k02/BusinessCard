@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+    <!--<ImageView-->
+    <!--android:id="@+id/dialog_account_image"-->
+    <!--android:layout_width="100dp"-->
+    <!--android:layout_height="100dp"-->
+    <!--android:layout_margin="20dp"-->
+    <!--android:src="@drawable/add_photo_icon"-->
+    <!--/>-->
+
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+        <EditText
+                android:id="@+id/dialog_account_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="이름"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+        <EditText
+                android:id="@+id/dialog_account_phonenumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="전화번호"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+        <EditText
+                android:id="@+id/dialog_account_office"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="직장"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+        <EditText
+                android:id="@+id/dialog_account_position"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="직위"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+</LinearLayout>
